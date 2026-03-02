@@ -8,9 +8,9 @@ Assistant IA qui décharge le PO sur trois piliers : **analyse de feedback**, **
 
 ## Schéma technique (vue d'ensemble)
 
-![Stack PO Agent](assets/stack-architecture.png)
+![Architecture PO Agent](assets/architecture-style.png)
 
-*Détail agentique : [agentic.md](agentic.md) · Schéma interactif : [architecture-diagram.html](architecture-diagram.html)*
+*Détail agentique : [agentic.md](agentic.md) · Schéma interactif avec logos : [architecture-diagram.html](architecture-diagram.html)*
 
 ---
 
