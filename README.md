@@ -5,7 +5,13 @@
 [![LangGraph](https://img.shields.io/badge/LangGraph-0.0.20+-orange.svg)](https://langchain-ai.github.io/langgraph)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Assistant IA pour Product Owner : analyse de feedback, priorisation (RICE, MoSCoW, WSJF), génération de user stories Jira-ready.
+<p align="center">
+  <img src="docs/assets/stack-architecture.png" alt="Architecture PO Agent" width="700" />
+</p>
+
+**Assistant IA pour Product Owner** : analyse de feedback, priorisation (RICE, MoSCoW, WSJF), génération de user stories Jira-ready.
+
+*Ce que l'agent fait :* Feedback → Insights → Priorisation → User Stories · [Architecture détaillée](docs/architecture.md) · [Pipeline agentique](docs/agentic.md)
 
 ## Fonctionnalités
 
