@@ -80,7 +80,6 @@ Voir [.env.example](.env.example) pour la liste complète.
 - **Pre-commit** : `make install-hooks` — Ruff + ESLint avant chaque commit
 - **Changelog** : [CHANGELOG.md](CHANGELOG.md)
 - **Contribution** : [CONTRIBUTING.md](CONTRIBUTING.md)
-- **Sécurité** : [SECURITY.md](SECURITY.md)
 
 ## Agents (pipeline LangGraph)
 
