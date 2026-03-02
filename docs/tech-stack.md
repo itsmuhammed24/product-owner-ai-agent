@@ -2,7 +2,7 @@
 
 ## Schéma d'architecture (avec logos)
 
-![Stack technique PO Agent](assets/stack-architecture.png)
+![PO Agent — Stack](assets/architecture-po-agent.png)
 
 <p align="center">
   <strong>👤 Utilisateur</strong> &nbsp;→&nbsp;

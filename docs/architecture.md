@@ -8,9 +8,9 @@ Assistant IA qui décharge le PO sur trois piliers : **analyse de feedback**, **
 
 ## Schéma technique (vue d'ensemble)
 
-![Architecture PO Agent — complet](assets/architecture-complet.png)
+![Architecture PO Agent](assets/architecture-po-agent.png)
 
-*Input → 7 agents (dont InsightAgent clustering sémantique) → Outputs · ReAct (Chat) · [Détail agentique](agentic.md) · [Schéma interactif](architecture-diagram.html)*
+*[Détail complet (7 agents, outputs)](assets/architecture-complet.png) · [Détail agentique](agentic.md) · [Schéma interactif](architecture-diagram.html)*
 
 ---
 

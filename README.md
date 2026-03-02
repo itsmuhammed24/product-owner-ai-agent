@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 <p align="center">
-  <img src="docs/assets/architecture-complet.png" alt="PO Agent — Architecture complète" width="750" />
+  <img src="docs/assets/architecture-po-agent.png" alt="PO Agent — Architecture" width="750" />
 </p>
 
 **Assistant IA pour Product Owner** : analyse de feedback, priorisation (RICE, MoSCoW, WSJF), génération de user stories Jira-ready.
