@@ -204,7 +204,8 @@
   "stories": {
     "title": "User Stories",
     "subtitle": "Stories générées avec critères d'acceptation",
-    "exportJira": "Exporter CSV Jira",
+    "exportJira": "Export Jira",
+    "exportAzureDevOps": "Export Azure DevOps",
     "storiesGenerated": "user story/stories générée(s)",
     "readyForRefinement": "Prêtes pour le refinement",
     "runAnalysisHint": "Lancez une analyse depuis la page Feedback.",

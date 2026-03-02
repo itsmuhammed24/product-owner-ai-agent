@@ -228,6 +228,19 @@ export async function exportJiraCsv(stories: PipelineResult['stories']): Promise
   return res.blob()
 }
 
+export async function exportAzureDevOpsCsv(stories: PipelineResult['stories']): Promise<Blob> {
+  const res = await fetch(`${API_URL}/export/azure-devops`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ stories }),
+  })
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}))
+    throw new Error(err.detail || err.error || `${i18n.t("common.exportError")} ${res.status}`)
+  }
+  return res.blob()
+}
+
 export interface ToolSuggestion {
   name: string
   params: Record<string, unknown>
