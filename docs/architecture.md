@@ -10,7 +10,7 @@ Assistant IA qui décharge le PO sur trois piliers : **analyse de feedback**, **
 
 ![Architecture PO Agent — complet](assets/architecture-complet.png)
 
-*Input → 7 agents → Outputs (Insights, Roadmap, Backlog, User Stories, Export Jira)* · [Détail agentique](agentic.md) · [Schéma interactif](architecture-diagram.html)
+*Input → 7 agents (dont InsightAgent clustering sémantique) → Outputs · ReAct (Chat) · [Détail agentique](agentic.md) · [Schéma interactif](architecture-diagram.html)*
 
 ---
 

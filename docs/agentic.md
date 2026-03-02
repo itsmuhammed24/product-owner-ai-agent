@@ -26,6 +26,13 @@ Le PO Agent repose sur un **pipeline LangGraph** orchestrant 7 agents spécialis
 
 ---
 
+## ReAct (Chat)
+
+Le **chat** implémente un pattern ReAct (Reasoning + Acting) :
+- **Détection d'intent** sur le message utilisateur
+- **Suggestions d'actions** : What-if, Roadmap, recherche, navigation
+- Déclenchement des outils adaptés selon le contexte
+
 ## Tool Calling
 
 Le pipeline s'appuie sur plusieurs **outils** :
@@ -33,8 +40,9 @@ Le pipeline s'appuie sur plusieurs **outils** :
 | Outil | Rôle | Clé API |
 |-------|------|---------|
 | **Groq** | LLM pour Feedback, Priority, Story, Critique, Synthesis | `GROQ_API_KEY` |
+| **Clustering sémantique** | InsightAgent — regroupement demandes similaires (embeddings) | `OPENAI_API_KEY` (opt.) |
 | **ChromaDB** | Vector store pour RAG cross-sessions | — |
-| **sentence-transformers** | Embeddings (all-MiniLM-L6-v2) | — |
+| **sentence-transformers** | Embeddings (all-MiniLM-L6-v2) — RAG + clustering | — |
 | **Canny** | Import feedback existant (optionnel) | `CANNY_API_KEY` |
 
 ---

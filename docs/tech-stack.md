@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <em>Outils :</em> RAG (sentence-transformers) · ChromaDB · Pydantic
+  <em>Outils :</em> ReAct (Chat) · Clustering sémantique · RAG · ChromaDB · Canny · Pydantic
 </p>
 
 > **Schéma interactif** : [architecture-diagram.html](architecture-diagram.html) — ouvrir dans un navigateur.
