@@ -1,0 +1,6 @@
+{"id":"FB-M01","source":"ticket","client":"Acme","segment":"mid-market","plan":"Pro","created_at":"2026-02-12","text":"SSO with Azure AD is mandatory for us. We can't roll out without it."}
+{"id":"FB-M02","source":"email","client":"Acme","segment":"mid-market","plan":"Pro","created_at":"2026-02-13","text":"Please add SCIM provisioning. Managing users manually is painful."}
+{"id":"FB-M03","source":"comment","client":"NovaConsult","segment":"agency","plan":"Team","created_at":"2026-02-10","text":"Your Gantt view is great but exporting to PDF breaks the layout."}
+{"id":"FB-M04","source":"ticket","client":"BlueFin","segment":"enterprise","plan":"Enterprise","created_at":"2026-02-14","text":"We need audit logs: who changed what and when, for compliance."}
+{"id":"FB-M05","source":"email","client":"Horizon","segment":"startup","plan":"Free","created_at":"2026-02-11","text":"App is slow when opening a project with 500+ tasks. Takes 10-15 seconds."}
+{"id":"FB-M06","source":"comment","client":"CraftWorks","segment":"smb","plan":"Team","created_at":"2026-02-09","text":"Notifications are too noisy. I want granular settings per project."}

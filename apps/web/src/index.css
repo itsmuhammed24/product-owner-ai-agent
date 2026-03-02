@@ -1,0 +1,111 @@
+/* Polices Thiga — thiga.co/fr : Inter (corps) + Kanit (titres) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Kanit:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 340 30% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 340 30% 10%;
+    --primary: 340 100% 27%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 340 8% 96%;
+    --secondary-foreground: 340 30% 10%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 340 5% 45%;
+    --accent: 340 100% 27%;
+    --accent-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 340 100% 27%;
+    --radius: 0.75rem;
+    /* Sidebar claire Thiga — fond blanc comme thiga.co */
+    --sidebar-bg: 0 0% 100%;
+    --sidebar-fg: 340 30% 10%;
+    --sidebar-border: 0 0% 92%;
+    --gradient-primary: linear-gradient(135deg, hsl(340 100% 27%), hsl(340 85% 38%));
+  }
+
+  .dark {
+    --background: 340 25% 8%;
+    --foreground: 0 0% 95%;
+    --card: 340 20% 12%;
+    --card-foreground: 0 0% 95%;
+    --primary: 340 80% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 340 20% 15%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 340 20% 15%;
+    --muted-foreground: 340 10% 65%;
+    --border: 340 20% 18%;
+    --input: 340 20% 18%;
+    --ring: 340 80% 55%;
+    --sidebar-bg: 340 25% 6%;
+    --sidebar-fg: 0 0% 90%;
+    --sidebar-border: 340 20% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Kanit', sans-serif;
+  }
+}
+
+/* Cards Thiga — élégant, sobre */
+.thiga-card {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 1px 2px hsl(340 30% 10% / 0.04);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.thiga-card:hover {
+  box-shadow: 0 4px 12px hsl(340 30% 10% / 0.06);
+  border-color: hsl(340 15% 88%);
+}
+.dark .thiga-card {
+  box-shadow: 0 1px 2px hsl(0 0% 0% / 0.2);
+}
+.dark .thiga-card:hover {
+  box-shadow: 0 4px 12px hsl(0 0% 0% / 0.3);
+}
+
+/* Bouton primary Thiga */
+.btn-thiga {
+  background: var(--gradient-primary);
+  color: white;
+  font-weight: 600;
+}
+.btn-thiga:hover {
+  background: linear-gradient(135deg, hsl(340 100% 32%), hsl(340 85% 42%));
+  color: white;
+  opacity: 0.95;
+}
+
+/* Badge tendance — bordeaux */
+.trend-bordeaux {
+  color: hsl(340 100% 35%);
+}
+.dark .trend-bordeaux {
+  color: hsl(340 80% 60%);
+}
+
+/* Animation pipeline flow */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+.pipeline-step {
+  animation: pulse-subtle 2.5s ease-in-out infinite;
+}

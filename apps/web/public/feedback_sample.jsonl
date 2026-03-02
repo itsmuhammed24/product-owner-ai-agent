@@ -1,0 +1,30 @@
+{"id":"FB-001","source":"ticket","client":"Acme","segment":"mid-market","plan":"Pro","created_at":"2026-02-12","text":"SSO with Azure AD is mandatory for us. We can't roll out without it."}
+{"id":"FB-002","source":"email","client":"Acme","segment":"mid-market","plan":"Pro","created_at":"2026-02-13","text":"Please add SCIM provisioning. Managing users manually is painful."}
+{"id":"FB-003","source":"comment","client":"NovaConsult","segment":"agency","plan":"Team","created_at":"2026-02-10","text":"Your Gantt view is great but exporting to PDF breaks the layout."}
+{"id":"FB-004","source":"ticket","client":"BlueFin","segment":"enterprise","plan":"Enterprise","created_at":"2026-02-14","text":"We need audit logs: who changed what and when, for compliance."}
+{"id":"FB-005","source":"email","client":"BlueFin","segment":"enterprise","plan":"Enterprise","created_at":"2026-02-15","text":"Subtasks should have assignees and due dates. Right now it's too limited."}
+{"id":"FB-006","source":"ticket","client":"Horizon","segment":"startup","plan":"Free","created_at":"2026-02-11","text":"App is slow when opening a project with 500+ tasks. Takes 10-15 seconds."}
+{"id":"FB-007","source":"comment","client":"Horizon","segment":"startup","plan":"Free","created_at":"2026-02-11","text":"Please allow keyboard shortcuts for quick task creation (like 'N' for new task)."}
+{"id":"FB-008","source":"email","client":"CraftWorks","segment":"smb","plan":"Team","created_at":"2026-02-09","text":"Notifications are too noisy. I want granular settings per project."}
+{"id":"FB-009","source":"ticket","client":"CraftWorks","segment":"smb","plan":"Team","created_at":"2026-02-09","text":"I can't find archived projects easily. Need a dedicated archive filter."}
+{"id":"FB-010","source":"comment","client":"Acme","segment":"mid-market","plan":"Pro","created_at":"2026-02-16","text":"SSO again: Okta support would be ideal, Azure AD minimum."}
+{"id":"FB-011","source":"ticket","client":"ZenBuild","segment":"smb","plan":"Pro","created_at":"2026-02-10","text":"Recurring tasks: weekly/monthly schedules are missing."}
+{"id":"FB-012","source":"email","client":"ZenBuild","segment":"smb","plan":"Pro","created_at":"2026-02-10","text":"Time tracking per task would help invoicing our clients."}
+{"id":"FB-013","source":"ticket","client":"BlueFin","segment":"enterprise","plan":"Enterprise","created_at":"2026-02-18","text":"Data retention policy options required (delete after X months)."}
+{"id":"FB-014","source":"comment","client":"NovaConsult","segment":"agency","plan":"Team","created_at":"2026-02-12","text":"Kanban swimlanes per assignee would make our workflow clearer."}
+{"id":"FB-015","source":"ticket","client":"PixelPeak","segment":"startup","plan":"Team","created_at":"2026-02-13","text":"Mobile: can't drag tasks in board view. Feels broken."}
+{"id":"FB-016","source":"email","client":"PixelPeak","segment":"startup","plan":"Team","created_at":"2026-02-13","text":"Would love a public roadmap page so we can see what's coming."}
+{"id":"FB-017","source":"ticket","client":"Acme","segment":"mid-market","plan":"Pro","created_at":"2026-02-17","text":"Permissions are confusing. Need role templates and better defaults."}
+{"id":"FB-018","source":"comment","client":"CraftWorks","segment":"smb","plan":"Team","created_at":"2026-02-17","text":"Search doesn't find tasks by tag reliably. Sometimes no results."}
+{"id":"FB-019","source":"ticket","client":"Horizon","segment":"startup","plan":"Free","created_at":"2026-02-19","text":"Please add bulk edit: change assignee/due date for many tasks at once."}
+{"id":"FB-020","source":"email","client":"ZenBuild","segment":"smb","plan":"Pro","created_at":"2026-02-19","text":"We need integrations: Slack notifications and Jira sync."}
+{"id":"FB-021","source":"ticket","client":"BlueFin","segment":"enterprise","plan":"Enterprise","created_at":"2026-02-20","text":"We require SAML 2.0 SSO and enforced MFA for all users."}
+{"id":"FB-022","source":"comment","client":"NovaConsult","segment":"agency","plan":"Team","created_at":"2026-02-20","text":"When exporting a project, include custom fields and task comments."}
+{"id":"FB-023","source":"ticket","client":"CraftWorks","segment":"smb","plan":"Team","created_at":"2026-02-21","text":"Dashboards: I want a portfolio view across projects with status at a glance."}
+{"id":"FB-024","source":"email","client":"PixelPeak","segment":"startup","plan":"Team","created_at":"2026-02-21","text":"Pricing feels high for small teams. Any lighter plan or usage-based option?"}
+{"id":"FB-025","source":"ticket","client":"Acme","segment":"mid-market","plan":"Pro","created_at":"2026-02-22","text":"Need API access to create/update tasks. Webhooks too."}
+{"id":"FB-026","source":"comment","client":"ZenBuild","segment":"smb","plan":"Pro","created_at":"2026-02-22","text":"Task dependencies would help planning. Like blockers and predecessors."}
+{"id":"FB-027","source":"ticket","client":"Horizon","segment":"startup","plan":"Free","created_at":"2026-02-23","text":"Login sometimes loops back to the sign-in screen. Can't reproduce reliably."}
+{"id":"FB-028","source":"email","client":"BlueFin","segment":"enterprise","plan":"Enterprise","created_at":"2026-02-23","text":"We need regional hosting (EU) and DPA docs for procurement."}
+{"id":"FB-029","source":"ticket","client":"NovaConsult","segment":"agency","plan":"Team","created_at":"2026-02-24","text":"Please allow client guests with limited permissions (read-only on selected projects)."}
+{"id":"FB-030","source":"comment","client":"CraftWorks","segment":"smb","plan":"Team","created_at":"2026-02-25","text":"Calendar view should show milestones and allow dragging dates."}

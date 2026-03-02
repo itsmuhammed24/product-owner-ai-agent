@@ -1,0 +1,5 @@
+{"id":"FB-M01","source":"ticket","client":"Acme","segment":"mid-market","plan":"Pro","created_at":"2026-02-12","text":"SSO with Azure AD is mandatory for us."}
+{"id":"FB-M02","source":"email","client":"Acme","segment":"mid-market","plan":"Pro","created_at":"2026-02-13","text":"Please add SCIM provisioning."}
+{"id":"FB-M03","source":"comment","client":"NovaConsult","segment":"agency","plan":"Team","created_at":"2026-02-10","text":"PDF export breaks the layout."}
+{"id":"FB-M04","source":"ticket","client":"BlueFin","segment":"enterprise","plan":"Enterprise","created_at":"2026-02-14","text":"We need audit logs for compliance."}
+{"id":"FB-M05","source":"email","client":"BlueFin","segment":"enterprise","plan":"Enterprise","created_at":"2026-02-15","text":"Subtasks need assignees and due dates."}

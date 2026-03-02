@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function() {
+        const themeStored = localStorage.getItem('po_agent_theme');
+        const dark = themeStored === 'dark' || (!themeStored && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.classList.toggle('dark', dark);
+        const langStored = localStorage.getItem('po-agent-lang');
+        const lang = (langStored === 'fr' || langStored === 'en') ? langStored : (navigator.language.startsWith('en') ? 'en' : 'fr');
+        document.documentElement.lang = lang;
+      })();
+    </script>
+    <link rel="icon" type="image/png" href="/thiga-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Assistant IA pour Product Owner : analyse de feedback, priorisation RICE/MoSCoW, génération de user stories Jira-ready. Par Thiga." />
+    <title>PO Agent — by Thiga</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

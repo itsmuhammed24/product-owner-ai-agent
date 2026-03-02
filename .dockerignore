@@ -1,0 +1,35 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.venv
+venv
+.pytest_cache
+.coverage
+coverage.xml
+htmlcov
+
+# Node
+node_modules
+apps/web/dist
+
+# Data (généré à l'exécution)
+data/chroma
+data/.cache
+
+# Env (secrets)
+.env
+.env.local
+
+# Docs / dev (optionnel en image)
+docs
+*.md
+!README.md
+
+# Tests (non nécessaires en prod)
+tests

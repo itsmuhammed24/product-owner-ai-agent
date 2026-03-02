@@ -1,0 +1,6 @@
+id,source,client,segment,plan,created_at,text
+FB-M01,ticket,Acme,mid-market,Pro,2026-02-12,"SSO with Azure AD is mandatory for us."
+FB-M02,email,Acme,mid-market,Pro,2026-02-13,"Please add SCIM provisioning."
+FB-M03,comment,NovaConsult,agency,Team,2026-02-10,"PDF export breaks the layout."
+FB-M04,ticket,BlueFin,enterprise,Enterprise,2026-02-14,"We need audit logs for compliance."
+FB-M05,email,BlueFin,enterprise,Enterprise,2026-02-15,"Subtasks need assignees and due dates."

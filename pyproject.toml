@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "product-owner-ai-agent"
+version = "0.1.0"
+description = "Assistant IA Product Owner — analyse feedback, priorisation RICE/MoSCoW, user stories Jira-ready"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.5.0",
+    "openai>=1.0.0",
+    "fastapi>=0.109.0",
+    "uvicorn[standard]>=0.27.0",
+    "langgraph>=0.0.20",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4.0", "httpx>=0.26.0", "pytest-cov>=4.0.0", "ruff>=0.1.0", "pre-commit>=3.0.0"]
+rag = ["sentence-transformers>=2.2.0"]
+chroma = ["chromadb>=0.4.0", "sentence-transformers>=2.2.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["po_agent*", "apps*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+markers = [
+    "e2e: tests end-to-end (pipeline complet)",
+    "api: tests contrat API / service",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+exclude = [".git", "__pycache__", "node_modules", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
+[tool.ruff.lint.per-file-ignores]
+"apps/api/main.py" = ["E402"]  # load_dotenv() doit s'exécuter avant les imports qui lisent os.getenv

@@ -1,0 +1,5 @@
+{"id":"FB-E01","source":"ticket","text":"Minimal: only required fields."}
+{"id":"FB-E02","source":"email","client":"","segment":null,"plan":null,"created_at":null,"text":"Optional fields empty or null."}
+{"id":"FB-E03","source":"comment","client":"Acme","segment":"smb","plan":"Free","created_at":"2026-01-01","text":"Unicode: café, naïve, 日本語, emoji 🚀"}
+{"id":"FB-E04","source":"ticket","text":"Quote \"inside\" and 'apostrophe' in text."}
+{"id":"FB-E05","source":"email","text":"Very long text. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet."}
