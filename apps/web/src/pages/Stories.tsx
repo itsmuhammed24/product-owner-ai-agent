@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { FileText, Download, Presentation, Minus, GitCompare } from "lucide-react"
 import type { PipelineResult } from "@/lib/api"
+import { exportJiraCsv } from "@/lib/api"
 import { AnimatedNumber } from "@/components/AnimatedNumber"
 import { usePipelineResult } from "@/contexts/PipelineResultContext"
 import { usePresentation } from "@/contexts/PresentationContext"
@@ -54,24 +55,18 @@ export default function Stories() {
     return complexityToPriority[c?.toUpperCase()] ?? "Medium"
   }
 
-  const exportJiraCsv = () => {
-    if (stories.length === 0) return ""
-    const header = "Summary,Description,Acceptance Criteria"
-    const rows = stories.map(
-      (s) =>
-        `"${(s.title || "").replace(/"/g, '""')}","${(s.user_story || "").replace(/"/g, '""')}","${(s.acceptance_criteria || []).join("; ").replace(/"/g, '""')}"`
-    )
-    return [header, ...rows].join("\n")
-  }
-
-  const downloadCsv = () => {
-    const csv = exportJiraCsv()
-    const blob = new Blob([csv], { type: "text/csv" })
-    const a = document.createElement("a")
-    a.href = URL.createObjectURL(blob)
-    a.download = "jira_import.csv"
-    a.click()
-    URL.revokeObjectURL(a.href)
+  const downloadCsv = async () => {
+    if (stories.length === 0) return
+    try {
+      const blob = await exportJiraCsv(stories)
+      const a = document.createElement("a")
+      a.href = URL.createObjectURL(blob)
+      a.download = "jira_import.csv"
+      a.click()
+      URL.revokeObjectURL(a.href)
+    } catch {
+      // already handled by api
+    }
   }
 
   return (
