@@ -1,5 +1,15 @@
 # Stack technique
 
+## Schéma d'architecture (avec logos)
+
+<p align="center">
+  <img src="assets/architecture.png" alt="Architecture PO Agent" width="800" />
+</p>
+
+> **Version interactive avec vrais logos** : [Ouvrir architecture-diagram.html](architecture-diagram.html) dans un navigateur — React, FastAPI, LangGraph, Groq, etc.
+
+---
+
 ## Stack visuelle (logos)
 
 <p align="center">

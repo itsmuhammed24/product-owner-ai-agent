@@ -6,6 +6,14 @@ Assistant IA qui décharge le PO sur trois piliers : **analyse de feedback**, **
 
 ---
 
+## Schéma technique (vue d'ensemble)
+
+![Architecture PO Agent](assets/architecture.png)
+
+*Version avec vrais logos des technos : [architecture-diagram.html](architecture-diagram.html)*
+
+---
+
 ## Flux global
 
 ```mermaid

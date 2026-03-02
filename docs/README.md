@@ -11,7 +11,8 @@ Assistant IA Product Owner : de la collecte de feedback à la roadmap priorisée
 | Document | Contenu |
 |----------|---------|
 | **[Quickstart](quickstart.md)** | Parcours pas-à-pas : clone, config, lancement, première analyse |
-| **[Architecture](architecture.md)** | Flux du pipeline, couches, diagrammes, décisions techniques |
+| **[Architecture](architecture.md)** | Schéma technique, flux du pipeline, diagrammes, décisions techniques |
+| **[Schéma interactif (logos)](architecture-diagram.html)** | Vue d’ensemble avec vrais logos — à ouvrir dans un navigateur |
 | **[Stack technique](tech-stack.md)** | Logos des technos, diagramme des connexions, versions |
 | **[Script démo](demo_script.md)** | Déroulé 8–10 min pour présenter le projet |
 | **[Challenges & solutions](challenges.md)** | Design agentique, problèmes rencontrés et réponses |

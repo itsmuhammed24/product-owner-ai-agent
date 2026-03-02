@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PO Agent — Architecture technique</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f1f5f9; padding: 2rem; margin: 0; }
+    .diagram { max-width: 900px; margin: 0 auto; background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.1); }
+    h1 { text-align: center; font-size: 1.25rem; color: #1e293b; margin-bottom: 2rem; }
+    .main-flow { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+    .box {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 1rem 1.25rem; border-radius: 12px; min-width: 100px;
+      border: 2px solid #e2e8f0; background: #f8fafc;
+    }
+    .box.user { background: #f0f9ff; border-color: #0ea5e9; }
+    .box.ui { background: #fef9c3; border-color: #eab308; }
+    .box.api { background: #dcfce7; border-color: #22c55e; }
+    .box.agent { background: #fce7f3; border-color: #ec4899; padding: 1.25rem 1.75rem; }
+    .box.llm { background: #ede9fe; border-color: #8b5cf6; }
+    .logos { display: flex; gap: 0.4rem; align-items: center; margin-top: 0.35rem; flex-wrap: wrap; justify-content: center; }
+    .logos img { width: 32px; height: 32px; object-fit: contain; }
+    .label { font-weight: 600; font-size: 0.9rem; color: #334155; }
+    .sub { font-size: 0.7rem; color: #64748b; margin-top: 0.2rem; }
+    .arrow { font-size: 1.2rem; color: #94a3b8; flex-shrink: 0; }
+    .tools-row { display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
+    .tools-row .box { min-width: 90px; }
+    .tool-label { font-size: 0.65rem; color: #94a3b8; text-align: center; margin-top: 0.5rem; }
+    .pipeline-flow { font-size: 0.75rem; color: #64748b; text-align: center; margin: 1rem 0; padding: 0.5rem; background: #f8fafc; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <div class="diagram">
+    <h1>Product Owner AI Agent — Architecture</h1>
+
+    <div class="main-flow">
+      <div class="box user">
+        <span style="font-size:1.8rem">👤</span>
+        <span class="label">Utilisateur</span>
+      </div>
+      <span class="arrow">→</span>
+      <div class="box ui">
+        <span class="label">UI</span>
+        <div class="logos">
+          <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" title="React">
+          <img src="https://cdn.simpleicons.org/vite/646CFF" alt="Vite" title="Vite">
+          <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind" title="Tailwind">
+        </div>
+      </div>
+      <span class="arrow">→</span>
+      <div class="box api">
+        <span class="label">API</span>
+        <div class="logos">
+          <img src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI" title="FastAPI">
+          <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" title="Python">
+        </div>
+      </div>
+      <span class="arrow">→</span>
+      <div class="box agent">
+        <span class="label">AI Agent</span>
+        <div class="logos">
+          <img src="https://cdn.simpleicons.org/langchain/F15D2F" alt="LangGraph" title="LangGraph">
+        </div>
+        <span class="sub">Pipeline agentique</span>
+      </div>
+      <span class="arrow">→</span>
+      <div class="box llm">
+        <span class="label">LLM</span>
+        <div class="logos">
+          <img src="https://cdn.simpleicons.org/groq/000000" alt="Groq" title="Groq">
+        </div>
+      </div>
+    </div>
+
+    <div class="pipeline-flow">/ingest · /run · /chat · /export — Feedback → Insights → RICE/MoSCoW → User Stories</div>
+
+    <div class="tool-label">Outils &amp; services</div>
+    <div class="tools-row">
+      <div class="box">
+        <span class="label">RAG</span>
+        <span class="sub">sentence-transformers</span>
+      </div>
+      <div class="box">
+        <span class="label">ChromaDB</span>
+        <span class="sub">Vector store</span>
+      </div>
+      <div class="box">
+        <span class="label">Pydantic</span>
+        <span class="sub">Validation</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
