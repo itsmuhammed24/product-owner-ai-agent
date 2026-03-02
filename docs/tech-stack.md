@@ -3,10 +3,24 @@
 ## Schéma d'architecture (avec logos)
 
 <p align="center">
-  <img src="assets/architecture.png" alt="Architecture PO Agent" width="800" />
+  <strong>👤 Utilisateur</strong> &nbsp;→&nbsp;
+  <a href="https://react.dev"><img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" /></a>
+  <a href="https://vitejs.dev"><img src="https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" /></a>
+  <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind-3.4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind" /></a>
+  &nbsp;→&nbsp;
+  <a href="https://fastapi.tiangolo.com"><img src="https://img.shields.io/badge/FastAPI-0.109-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" /></a>
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /></a>
+  &nbsp;→&nbsp;
+  <a href="https://langchain-ai.github.io/langgraph"><img src="https://img.shields.io/badge/LangGraph-0.0.20+-F15D2F?style=for-the-badge&logo=langchain&logoColor=white" alt="LangGraph" /></a>
+  &nbsp;→&nbsp;
+  <a href="https://console.groq.com"><img src="https://img.shields.io/badge/Groq-LLM-000000?style=for-the-badge&logo=groq&logoColor=white" alt="Groq" /></a>
 </p>
 
-> **Version interactive avec vrais logos** : [Ouvrir architecture-diagram.html](architecture-diagram.html) dans un navigateur — React, FastAPI, LangGraph, Groq, etc.
+<p align="center">
+  <em>Outils :</em> RAG (sentence-transformers) · ChromaDB · Pydantic
+</p>
+
+> **Schéma interactif** : [architecture-diagram.html](architecture-diagram.html) — ouvrir dans un navigateur.
 
 ---
 
