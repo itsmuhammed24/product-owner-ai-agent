@@ -14,8 +14,6 @@ Assistant IA qui décharge le PO sur trois piliers : **analyse de feedback**, **
 
 ### Vue flux (Input → Pipeline 7 agents → Outputs)
 
-![Architecture PO Agent — Flux](assets/architecture-flow.png)
-
 ![Architecture PO Agent — Détail](assets/architecture-detaille.png)
 
 *[Détail agentique](agentic.md) · [Schéma interactif](architecture-diagram.html)*
