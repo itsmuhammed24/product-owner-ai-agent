@@ -33,8 +33,6 @@ def _get_embedding_model():
 def _embed_one_cached(text: str):
     """Cache LRU par texte (hashable). Nécessite _get_embedding_model() appelé avant."""
     model = _get_embedding_model()
-    import numpy as np
-
     v = model.encode(text, convert_to_numpy=True)
     return tuple(v.tolist())  # tuple hashable pour lru_cache
 

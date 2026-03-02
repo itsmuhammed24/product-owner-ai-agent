@@ -1,7 +1,5 @@
 """Tests Chroma vector store (nécessite pip install -e ".[chroma]")."""
 
-import os
-
 import pytest
 
 try:

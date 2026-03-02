@@ -1,6 +1,5 @@
 """Tests rate limit middleware."""
 
-import pytest
 from starlette.testclient import TestClient
 
 from apps.api.main import app

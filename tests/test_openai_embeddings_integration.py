@@ -1,7 +1,5 @@
 """Test d'intégration embeddings OpenAI — nécessite OPENAI_API_KEY dans .env."""
 
-import os
-
 import pytest
 
 # Charger .env avant le test
@@ -10,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from po_agent.intelligence.embeddings import cluster_requests, embeddings_available
+from po_agent.intelligence.embeddings import cluster_requests, embeddings_available  # noqa: E402
 
 
 @pytest.mark.skipif(

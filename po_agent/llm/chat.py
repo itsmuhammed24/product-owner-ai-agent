@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import os
 from typing import Any, Dict, Optional
 
 
@@ -74,7 +73,7 @@ Utilise ce contexte pour toutes les questions. Exemples :
     else:
         base += """
 
-Sans contexte : 
+Sans contexte :
 - "Comment démarrer" / "Qu'est-ce que le PO Agent" : explique brièvement : charger des feedbacks (JSONL/CSV) sur la page Feedback, lancer l'analyse, explorer Roadmap et User Stories. Invite à faire une démo ou charger l'exemple.
 - Si l'utilisateur colle du feedback client : analyse-le (catégorie, points clés, actions PO).
 - Sinon : réponds de façon utile et concise.
