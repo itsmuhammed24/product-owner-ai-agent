@@ -37,7 +37,9 @@ def generate_summary(state: Dict[str, Any]) -> Dict[str, Any]:
         else:
             summary = _fallback_summary(roadmap)
     except Exception as e:
-        logging.getLogger(__name__).warning("LLM synthesis failed, using fallback: %s", e, exc_info=True)
+        logging.getLogger(__name__).warning(
+            "LLM synthesis failed, using fallback: %s", e, exc_info=True
+        )
         summary = _fallback_summary(roadmap)
 
     state["options"]["roadmap_summary"] = summary

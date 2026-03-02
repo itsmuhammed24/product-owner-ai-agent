@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import List, Literal, Optional
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 FeedbackCategory = Literal[
     "bug",
@@ -69,11 +69,34 @@ class BacklogItem(BaseModel):
     cost_of_delay: float = 0.0
 
 
+def _norm_acceptance_criterion(item: object) -> str:
+    """Normalise un critère : str OK, dict given/when/then → string."""
+    if isinstance(item, str):
+        return item
+    if isinstance(item, dict):
+        parts = []
+        for key in ("given", "when", "then"):
+            if key in item and item[key]:
+                parts.append(f"{key.capitalize()} {item[key]}".strip())
+        if parts:
+            return ". ".join(parts)
+        return str(item)
+    return str(item)
+
+
 class UserStory(BaseModel):
     title: str
     user_story: str
     acceptance_criteria: List[str]
     complexity: Complexity
+
+    @field_validator("acceptance_criteria", mode="before")
+    @classmethod
+    def normalize_acceptance_criteria(cls, v: object) -> List[str]:
+        """LLM peut retourner [{"given":"...","when":"...","then":"..."}] → convertir en strings."""
+        if not isinstance(v, list):
+            return []
+        return [_norm_acceptance_criterion(x) for x in v]
 
 
 class PrioritySuggestion(BaseModel):

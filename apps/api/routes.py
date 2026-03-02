@@ -264,26 +264,6 @@ def export_jira(req: ExportJiraRequest):
     )
 
 
-@router.post("/export/azure-devops")
-def export_azure_devops(req: ExportJiraRequest):
-    """Exporte les user stories en CSV Azure DevOps (Work Item Type, Title, Description, AC)."""
-    from fastapi.responses import PlainTextResponse
-
-    from po_agent.domain.models import UserStory
-    from po_agent.export.azure_devops_export import stories_to_azure_devops_csv_string
-
-    try:
-        stories = [UserStory.model_validate(s) for s in req.stories]
-    except Exception as e:
-        raise HTTPException(status_code=422, detail=f"Stories invalides : {e}") from e
-    csv_content = stories_to_azure_devops_csv_string(stories)
-    return PlainTextResponse(
-        content=csv_content,
-        media_type="text/csv",
-        headers={"Content-Disposition": "attachment; filename=azure_devops_import.csv"},
-    )
-
-
 # --- Chat (ReAct tools) ---
 
 

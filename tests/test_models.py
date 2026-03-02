@@ -56,3 +56,20 @@ def test_user_story():
     )
     assert us.complexity == "M"
     assert len(us.acceptance_criteria) == 2
+
+
+def test_user_story_acceptance_criteria_dict_normalization():
+    """LLM peut retourner acceptance_criteria en [{"given":"...","when":"...","then":"..."}]."""
+    raw = {
+        "title": "Mute tasks",
+        "user_story": "As a user I want to mute tasks",
+        "acceptance_criteria": [
+            {"given": "A project", "when": "I mute", "then": "It shows Muted"},
+            "Plain string criterion",
+        ],
+        "complexity": "M",
+    }
+    us = UserStory.model_validate(raw)
+    assert all(isinstance(c, str) for c in us.acceptance_criteria)
+    assert "Given A project" in us.acceptance_criteria[0]
+    assert "Plain string criterion" == us.acceptance_criteria[1]

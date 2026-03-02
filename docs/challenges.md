@@ -22,3 +22,10 @@
 
 ### Explicabilité
 **Solution** : Rationale, Evidence IDs, onglet Explainability.
+
+### Warnings au démarrage
+
+| Warning | Cause | Action |
+|---------|-------|--------|
+| `You are sending unauthenticated requests to the HF Hub` | HuggingFace rate limits | Optionnel : définir `HF_TOKEN` dans `.env` (https://huggingface.co/settings/tokens) |
+| `BertModel … embeddings.position_ids UNEXPECTED` | Différence mineure de config du modèle | **Ignorable** — sentence-transformers fonctionne correctement |

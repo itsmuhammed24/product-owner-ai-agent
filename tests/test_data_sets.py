@@ -14,7 +14,7 @@ def test_minimal_jsonl_exists():
     p = SAMPLES_DIR / "feedback_minimal.jsonl"
     assert p.exists()
     items = load_jsonl(p)
-    assert len(items) == 5
+    assert len(items) == 6
     assert items[0].id == "FB-M01"
     assert "SSO" in items[0].text
 

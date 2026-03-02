@@ -63,7 +63,9 @@ def _generate_one(
         )
         return (idx, item, story, None)
     except Exception as e:
-        logging.getLogger(__name__).warning("Story generation failed for %s: %s", item.feature[:50], e)
+        logging.getLogger(__name__).warning(
+            "Story generation failed for %s: %s", item.feature[:50], e
+        )
         return (idx, item, None, str(e))
 
 
@@ -87,7 +89,7 @@ def generate_stories(state: Dict[str, Any]) -> Dict[str, Any]:
     errors: List[str] = state.get("errors", [])
 
     ordered: List[UserStory | None] = [None] * len(backlog)
-    max_workers = min(5, len(backlog)) if backlog else 1
+    max_workers = min(3, len(backlog)) if backlog else 1  # 3 évite rate limit Groq (6k TPM)
 
     with ThreadPoolExecutor(max_workers=max_workers) as ex:
         futures = {

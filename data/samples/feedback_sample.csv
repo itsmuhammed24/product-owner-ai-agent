@@ -1,31 +1,31 @@
 id,source,client,segment,plan,created_at,text
-FB-001,ticket,Acme,mid-market,Pro,2026-02-12,"SSO with Azure AD is mandatory for us. We can't roll out without it."
-FB-002,email,Acme,mid-market,Pro,2026-02-13,"Please add SCIM provisioning. Managing users manually is painful."
-FB-003,comment,NovaConsult,agency,Team,2026-02-10,"Your Gantt view is great but exporting to PDF breaks the layout."
-FB-004,ticket,BlueFin,enterprise,Enterprise,2026-02-14,"We need audit logs: who changed what and when, for compliance."
-FB-005,email,BlueFin,enterprise,Enterprise,2026-02-15,"Subtasks should have assignees and due dates. Right now it's too limited."
-FB-006,ticket,Horizon,startup,Free,2026-02-11,"App is slow when opening a project with 500+ tasks. Takes 10-15 seconds."
-FB-007,comment,Horizon,startup,Free,2026-02-11,"Please allow keyboard shortcuts for quick task creation (like 'N' for new task)."
-FB-008,email,CraftWorks,smb,Team,2026-02-09,"Notifications are too noisy. I want granular settings per project."
-FB-009,ticket,CraftWorks,smb,Team,2026-02-09,"I can't find archived projects easily. Need a dedicated archive filter."
-FB-010,comment,Acme,mid-market,Pro,2026-02-16,"SSO again: Okta support would be ideal, Azure AD minimum."
-FB-011,ticket,ZenBuild,smb,Pro,2026-02-10,"Recurring tasks: weekly/monthly schedules are missing."
-FB-012,email,ZenBuild,smb,Pro,2026-02-10,"Time tracking per task would help invoicing our clients."
-FB-013,ticket,BlueFin,enterprise,Enterprise,2026-02-18,"Data retention policy options required (delete after X months)."
-FB-014,comment,NovaConsult,agency,Team,2026-02-12,"Kanban swimlanes per assignee would make our workflow clearer."
-FB-015,ticket,PixelPeak,startup,Team,2026-02-13,"Mobile: can't drag tasks in board view. Feels broken."
-FB-016,email,PixelPeak,startup,Team,2026-02-13,"Would love a public roadmap page so we can see what's coming."
-FB-017,ticket,Acme,mid-market,Pro,2026-02-17,"Permissions are confusing. Need role templates and better defaults."
-FB-018,comment,CraftWorks,smb,Team,2026-02-17,"Search doesn't find tasks by tag reliably. Sometimes no results."
-FB-019,ticket,Horizon,startup,Free,2026-02-19,"Please add bulk edit: change assignee/due date for many tasks at once."
-FB-020,email,ZenBuild,smb,Pro,2026-02-19,"We need integrations: Slack notifications and Jira sync."
-FB-021,ticket,BlueFin,enterprise,Enterprise,2026-02-20,"We require SAML 2.0 SSO and enforced MFA for all users."
-FB-022,comment,NovaConsult,agency,Team,2026-02-20,"When exporting a project, include custom fields and task comments."
-FB-023,ticket,CraftWorks,smb,Team,2026-02-21,"Dashboards: I want a portfolio view across projects with status at a glance."
-FB-024,email,PixelPeak,startup,Team,2026-02-21,"Pricing feels high for small teams. Any lighter plan or usage-based option?"
-FB-025,ticket,Acme,mid-market,Pro,2026-02-22,"Need API access to create/update tasks. Webhooks too."
-FB-026,comment,ZenBuild,smb,Pro,2026-02-22,"Task dependencies would help planning. Like blockers and predecessors."
-FB-027,ticket,Horizon,startup,Free,2026-02-23,"Login sometimes loops back to the sign-in screen. Can't reproduce reliably."
-FB-028,email,BlueFin,enterprise,Enterprise,2026-02-23,"We need regional hosting (EU) and DPA docs for procurement."
-FB-029,ticket,NovaConsult,agency,Team,2026-02-24,"Please allow client guests with limited permissions (read-only on selected projects)."
-FB-030,comment,CraftWorks,smb,Team,2026-02-25,"Calendar view should show milestones and allow dragging dates."
+FB-001,ticket,TechCorp,enterprise,Enterprise,2026-02-10,SSO with Azure AD is blocking our rollout. We have 2000+ employees and manual provisioning is unsustainable. This is a deal-breaker for procurement.
+FB-002,email,TechCorp,enterprise,Enterprise,2026-02-11,Please add SCIM provisioning. We manage identities in Okta and need automatic user sync. Manual invite/revoke is a security risk and wastes IT time.
+FB-003,comment,DesignStudio,agency,Team,2026-02-10,"The Gantt chart is brilliant but PDF export breaks everything — layout shifts, truncated labels, wrong page breaks. Clients get unusable deliverables."
+FB-004,ticket,BankSecure,enterprise,Enterprise,2026-02-12,"Audit logs are non-negotiable for compliance. We need who did what, when, and from where. SOC2 and ISO 27001 require full traceability."
+FB-005,email,AgencyFlow,agency,Team,2026-02-13,Subtasks need assignees and due dates. Right now we use comments to track who does what — it's chaotic on projects with 10+ people.
+FB-006,ticket,StartupXYZ,startup,Free,2026-02-11,App freezes for 15+ seconds when opening projects with 500+ tasks. Unusable for our large product backlog. Happens every time.
+FB-007,comment,DevTeam,mid-market,Pro,2026-02-12,"Keyboard shortcuts would 10x our speed. N for new task, J/K to navigate like Vim. Power users need this."
+FB-008,email,ProjectHub,smb,Team,2026-02-09,"Notifications are overwhelming. I get 50+ per day. Need per-project granularity: mute some, urgent-only for others."
+FB-009,ticket,ConsultCo,mid-market,Pro,2026-02-14,Archive filter is buried. We have 80 projects and finding old ones takes forever. Need a dedicated archive view with search.
+FB-010,comment,GlobalInc,enterprise,Enterprise,2026-02-15,Okta and Azure AD SSO are both must-haves. We're multi-cloud. SAML 2.0 support would cover most enterprises.
+FB-011,ticket,RecurringTasks,smb,Pro,2026-02-10,"Recurring tasks are essential: weekly standups, monthly reviews, sprint planning. Right now we duplicate manually every week."
+FB-012,email,BillingAgency,agency,Team,2026-02-11,Time tracking per task would solve invoicing. We bill clients by project phase. We use external tools and it's double entry.
+FB-013,ticket,DataGovernance,enterprise,Enterprise,2026-02-16,"GDPR requires data retention controls. We need policies: auto-delete after X months, export before deletion. Legal is asking."
+FB-014,comment,TeamKanban,agency,Team,2026-02-12,Kanban swimlanes by assignee would clarify who's overloaded. We have 8 devs and bottlenecks are invisible today.
+FB-015,ticket,MobileFirst,startup,Team,2026-02-13,Mobile board: drag-and-drop doesn't work. Tapping moves nothing. We work on-site and mobile is primary. Critical bug.
+FB-016,email,TransparencyCo,startup,Team,2026-02-14,Public roadmap would build trust. Customers want to see what's coming. Canny/Productboard style — upvote and comment.
+FB-017,ticket,EnterpriseIT,enterprise,Enterprise,2026-02-15,"Permissions are a mess. Need role templates: Viewer, Contributor, Project Admin. Current model is all-or-nothing."
+FB-018,comment,SearchUser,smb,Team,2026-02-16,"Search by tag returns nothing sometimes. Same tag, different results. We use tags heavily for filtering. Unreliable."
+FB-019,ticket,ScaleUp,mid-market,Pro,2026-02-17,"Bulk edit is mandatory: reassign 50 tasks when someone leaves, shift dates for a sprint. One-by-one is torture."
+FB-020,email,Integrations,smb,Pro,2026-02-18,"Slack notifications and Jira sync would replace 3 tools. Status updates in Slack, tasks synced to Jira. Huge time saver."
+FB-021,ticket,SecBank,enterprise,Enterprise,2026-02-19,SAML 2.0 SSO + enforced MFA for all users. No exceptions. This is a security requirement from our CISO.
+FB-022,comment,ExportPro,agency,Team,2026-02-20,Export should include custom fields and task comments. Current export is useless for client handoffs. We need full fidelity.
+FB-023,ticket,PortfolioPM,mid-market,Pro,2026-02-21,Portfolio dashboard: status across 20 projects at a glance. Red/amber/green. Today we open each project manually.
+FB-024,email,BudgetStartup,startup,Free,2026-02-22,Pricing is steep for teams under 5. Usage-based or a lighter Free tier would help us grow into paid.
+FB-025,ticket,AutomationDev,mid-market,Pro,2026-02-23,REST API for tasks and webhooks for updates. We automate with scripts. Zapier isn't enough — we need native API.
+FB-026,comment,PlanningTeam,agency,Team,2026-02-24,"Task dependencies: blockers, predecessors. Gantt shows dates but not relationships. We can't model real project flow."
+FB-027,ticket,LoginBug,startup,Free,2026-02-25,Login redirect loop — sometimes after auth we're sent back to sign-in. Can't reproduce every time but it's frustrating.
+FB-028,email,EUCorp,enterprise,Enterprise,2026-02-26,EU hosting and DPA documents for procurement. We can't use US-only. Data residency is contractual.
+FB-029,ticket,ClientPortal,agency,Team,2026-02-27,Client guest access: read-only on selected projects. They shouldn't see our internal tasks. Need granular sharing.
+FB-030,comment,CalendarUser,smb,Team,2026-02-28,"Calendar view: show milestones, drag to reschedule. Right now it's view-only. We plan in calendar, execute in board."

@@ -1,4 +1,4 @@
-.PHONY: demo test lint run web start install-hooks
+.PHONY: demo test lint run web start install-hooks up down up-d
 
 install-hooks:
 	@pip install pre-commit -q && pre-commit install
@@ -28,3 +28,13 @@ lint:
 	ruff check .
 format:
 	ruff format .
+
+# Docker (OrbStack / Docker Desktop)
+up:
+	docker-compose up --build
+
+up-d:
+	docker-compose up -d --build
+
+down:
+	docker-compose down

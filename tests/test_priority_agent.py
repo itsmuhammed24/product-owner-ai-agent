@@ -1,11 +1,32 @@
 """Tests PriorityAgent — sans LLM."""
 
+import json
+
 from po_agent.agents.priority_agent import (
     estimate_effort_from_category,
     estimate_impact_from_category,
     prioritize_features,
 )
 from po_agent.domain.models import Insight
+from po_agent.llm.prompts import PRIORITY_AGENT_USER
+
+
+def test_priority_prompt_format_no_keyerror():
+    """Régression: le template ne doit pas interpréter 'items' comme placeholder."""
+    insights_json = json.dumps(
+        [
+            {
+                "request": "Add SSO",
+                "category": "feature_request",
+                "occurrences": 5,
+                "evidence_quotes": ["SSO"],
+            }
+        ],
+        indent=2,
+    )
+    prompt = PRIORITY_AGENT_USER.format(insights_json=insights_json)
+    assert "items" in prompt
+    assert "Add SSO" in prompt
 
 
 def test_priority_generation():

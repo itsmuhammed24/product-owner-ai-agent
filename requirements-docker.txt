@@ -1,0 +1,12 @@
+# Dépendances API (base + rag + chroma) — synchro pyproject.toml
+# Évite de rebuild pip quand seul le code Python change
+pydantic>=2.5.0
+openai>=1.0.0
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+langgraph>=0.0.20
+python-dotenv>=1.0.0
+requests>=2.31.0
+json-repair>=0.7.0
+sentence-transformers>=2.2.0
+chromadb>=0.4.0

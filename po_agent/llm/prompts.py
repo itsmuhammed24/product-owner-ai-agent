@@ -72,7 +72,7 @@ Context:
 Constraints:
 - title: <= 80 chars
 - user_story: exactly 'As a ..., I want ..., so that ...'
-- acceptance_criteria: 4 to 7 bullet items, start with 'Given/When/Then' style
+- acceptance_criteria: array of strings, 4-7 items, each like "Given X. When Y. Then Z."
 - complexity: one of XS, S, M, L, XL
 
 Return JSON:
@@ -83,7 +83,7 @@ Return JSON:
 PRIORITY_AGENT_SYSTEM = """You are a senior Product Owner.
 For each insight, suggest impact (1-3), effort (1-10), and a brief rationale.
 Be data-driven: use evidence_quotes and occurrences to justify.
-Return ONLY valid JSON: {"items": [{"impact": float, "effort": float, "rationale": "..."}, ...]}
+Return ONLY valid JSON: {{"items": [{{"impact": float, "effort": float, "rationale": "..."}}, ...]}}
 One object per insight, same order. No extra keys, no markdown."""
 
 PRIORITY_AGENT_USER = """Suggest priority parameters for these insights.
@@ -95,7 +95,7 @@ Constraints:
 - effort: 1 (trivial) to 10 (major)
 - rationale: 1-2 sentences, business-oriented
 
-Return JSON: {"items": [{"impact": ..., "effort": ..., "rationale": "..."}, ...]}"""
+Return JSON: {{"items": [{{"impact": ..., "effort": ..., "rationale": "..."}}, ...]}}"""
 
 SYNTHESIS_AGENT_SYSTEM = """You are a senior Product Owner writing an executive summary.
 Write a concise 3-5 sentence summary of the roadmap for stakeholders.
@@ -175,4 +175,5 @@ Acceptance criteria:
 Improvement feedback: {improvement_hint}
 
 Rewrite the user story (title, user_story, acceptance_criteria, complexity) to address the feedback.
-Return ONLY valid JSON: {{"title": "...", "user_story": "As a ..., I want ..., so that ...", "acceptance_criteria": [...], "complexity": "XS|S|M|L|XL"}}"""
+acceptance_criteria MUST be an array of strings (e.g. ["Given X. When Y. Then Z.", "Given A. When B. Then C."]), NOT objects.
+Return ONLY valid JSON: {{"title": "...", "user_story": "As a ..., I want ..., so that ...", "acceptance_criteria": ["string", "string", ...], "complexity": "XS|S|M|L|XL"}}"""

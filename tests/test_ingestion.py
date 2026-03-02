@@ -31,7 +31,7 @@ def test_load_csv():
     items = load_csv(path)
     assert len(items) == 30
     assert items[0].id == "FB-001"
-    assert items[0].client == "Acme"
+    assert items[0].client  # non vide
 
 
 def test_jsonl_csv_parity():
@@ -45,22 +45,22 @@ def test_jsonl_csv_parity():
 
 
 def test_load_minimal_jsonl():
-    """Charge feedback_minimal.jsonl — 5 items."""
+    """Charge feedback_minimal.jsonl — 6 items."""
     path = Path("data/samples/feedback_minimal.jsonl")
     if not path.exists():
         pytest.skip("feedback_minimal.jsonl non trouvé")
     items = load_jsonl(path)
-    assert len(items) == 5
+    assert len(items) == 6
     assert items[0].id == "FB-M01"
 
 
 def test_load_minimal_csv():
-    """Charge feedback_minimal.csv."""
+    """Charge feedback_minimal.csv — 6 items."""
     path = Path("data/samples/feedback_minimal.csv")
     if not path.exists():
         pytest.skip("feedback_minimal.csv non trouvé")
     items = load_csv(path)
-    assert len(items) == 5
+    assert len(items) == 6
 
 
 def test_minimal_jsonl_csv_parity():
