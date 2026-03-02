@@ -5,18 +5,16 @@
 [![LangGraph](https://img.shields.io/badge/LangGraph-0.0.20+-orange.svg)](https://langchain-ai.github.io/langgraph)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-<p align="center">
-  <img src="docs/assets/architecture-flow.png" alt="PO Agent — Architecture" width="700" />
-</p>
-
-
-
 ### Vue flux (Input → Pipeline 7 agents → Outputs)
-
 
 <p align="center">
   <img src="docs/assets/architecture-detaille.png" alt="PO Agent — Architecture" width="700" />
 </p>
+
+<p align="center">
+  <img src="docs/assets/architecture-flow.png" alt="PO Agent — Architecture" width="700" />
+</p>
+
 
 **Assistant IA pour Product Owner** : analyse de feedback, priorisation (RICE, MoSCoW, WSJF), génération de user stories Jira-ready.
 
