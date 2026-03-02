@@ -2,6 +2,8 @@
 
 ## Schéma d'architecture (avec logos)
 
+![Stack technique PO Agent](assets/stack-architecture.png)
+
 <p align="center">
   <strong>👤 Utilisateur</strong> &nbsp;→&nbsp;
   <a href="https://react.dev"><img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" /></a>

@@ -66,9 +66,9 @@ Voir [.env.example](.env.example) pour la liste complète.
 - **Démo fonctionnelle** : API Swagger + UI React
 - **Documentation** : voir [docs/README.md](docs/README.md)
   - [Architecture](docs/architecture.md) — flux, diagrammes, couches
+  - [Architecture agentique](docs/agentic.md) — pipeline LangGraph, agents, tool calling
   - [Stack technique](docs/tech-stack.md) — technologies, versions
   - [Quickstart](docs/quickstart.md) — installation, première analyse
-  - [Script démo](docs/demo_script.md) — présentation 8–10 min
 - **Tests** : `make test` (Python) • `cd apps/web && npm run test` (frontend Vitest)
 - **i18n** : Interface en français et anglais (bouton FR/EN dans la sidebar)
 - **Pre-commit** : `make install-hooks` — Ruff + ESLint avant chaque commit
