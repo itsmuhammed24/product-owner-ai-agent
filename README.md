@@ -9,6 +9,15 @@
   <img src="docs/assets/architecture-flow.png" alt="PO Agent — Architecture" width="700" />
 </p>
 
+
+
+### Vue flux (Input → Pipeline 7 agents → Outputs)
+
+
+<p align="center">
+  <img src="docs/assets/architecture-detaille.png" alt="PO Agent — Architecture" width="700" />
+</p>
+
 **Assistant IA pour Product Owner** : analyse de feedback, priorisation (RICE, MoSCoW, WSJF), génération de user stories Jira-ready.
 
 *Feedback → Insights → Priorisation → User Stories Jira-ready* · [Architecture](docs/architecture.md) · [Pipeline agentique](docs/agentic.md)
