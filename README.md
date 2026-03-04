@@ -3,7 +3,6 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.109+-green.svg)](https://fastapi.tiangolo.com)
 [![LangGraph](https://img.shields.io/badge/LangGraph-0.0.20+-orange.svg)](https://langchain-ai.github.io/langgraph)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 <p align="center">
   <img src="docs/assets/architecture-flow.png" alt="PO Agent — Architecture" width="700" />
@@ -145,3 +144,13 @@ apps/
 | **Erreur Canny** | Vérifier `CANNY_API_KEY` et `CANNY_BOARD_ID` dans `.env`. |
 | **Chroma / RAG échoue** | `pip install -e ".[chroma]"`. Vérifier `./data/chroma` accessible en écriture. |
 | **Docker : rate limit inefficace** | Configurer le proxy pour passer `X-Forwarded-For` (client réel). |
+
+## Licence
+
+Ce projet est soumis à une **licence propriétaire d’utilisation limitée**, rédigée spécifiquement pour le test technique « Technical Test for Agent Builder: Create a Product Owner Agent » transmis par la société THIGA.
+
+- Le code et la documentation restent la propriété exclusive de **Mouhamed SY**.
+- La Société ne dispose que d’un droit d’utilisation **strictement limité à l’évaluation du test dans le cadre du recrutement**.
+- Toute réutilisation, adaptation, intégration dans un produit ou service (y compris outils internes ou offres commerciales), ainsi que toute utilisation de ce projet (code, données ou prompts) pour améliorer des modèles internes, est **interdite sans accord écrit préalable**.
+
+Les modalités complètes sont détaillées dans le fichier [`LICENSE`](LICENSE).
