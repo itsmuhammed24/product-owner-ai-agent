@@ -149,7 +149,7 @@ apps/
 
 Ce projet est soumis à une **licence propriétaire d’utilisation limitée**, rédigée spécifiquement pour le test technique « Technical Test for Agent Builder: Create a Product Owner Agent » transmis par la société THIGA.
 
-- Le code et la documentation restent la propriété exclusive de **Mouhamed SY**.
+- Le code et la documentation restent la propriété exclusive de l’auteur.
 - La Société ne dispose que d’un droit d’utilisation **strictement limité à l’évaluation du test dans le cadre du recrutement**.
 - Toute réutilisation, adaptation, intégration dans un produit ou service (y compris outils internes ou offres commerciales), ainsi que toute utilisation de ce projet (code, données ou prompts) pour améliorer des modèles internes, est **interdite sans accord écrit préalable**.
 
