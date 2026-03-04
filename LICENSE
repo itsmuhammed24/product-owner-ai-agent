@@ -1,21 +1,91 @@
-MIT License
+LICENCE D’UTILISATION LIMITÉE – TEST TECHNIQUE « PRODUCT OWNER AI AGENT »
 
-Copyright (c) 2025 
+Copyright (c) 2026 Mouhamed SY
+Tous droits réservés.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. OBJET DE LA LICENCE ET CONTEXTE
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1.1. La présente licence encadre l’utilisation du code source, de la documentation, des données et, plus largement, de tous les éléments contenus dans ce dépôt (ci-après le « Logiciel »), développés par Mouhamed SY (ci-après le « Titulaire »).
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+1.2. Le Logiciel a été réalisé spécifiquement dans le cadre d’un test technique intitulé « Technical Test for Agent Builder: Create a Product Owner Agent », transmis par la société THIGA, SAS au capital de 35 000,00 €, immatriculée au RCS de Paris sous le numéro 802 149 740 et dont le siège social est situé 23 rue Taitbout, 75009 Paris (ci-après la « Société »), dans le cadre d’un processus de recrutement.
+
+1.3. Toute utilisation du Logiciel implique l’acceptation sans réserve des termes de la présente licence.
+
+2. PROPRIÉTÉ INTELLECTUELLE
+
+2.1. Le Titulaire conserve l’intégralité des droits de propriété intellectuelle sur le Logiciel (droits d’auteur et droits voisins, y compris tous les droits de reproduction, représentation, modification, adaptation, traduction et distribution).
+
+2.2. Aucune cession de droits n’est accordée par la présente licence ; seul un droit d’utilisation **très limité**, non exclusif, non transférable et révocable est concédé, tel que décrit ci-après.
+
+3. DROIT D’UTILISATION STRICTEMENT LIMITÉ
+
+Sous réserve du respect strict des conditions ci-dessous, le Titulaire accorde à la Société, ainsi qu’aux personnes impliquées dans le recrutement, un droit personnel, non transférable, non exclusif et révocable :
+
+3.1. D’installer, consulter et exécuter le Logiciel uniquement pour :
+   - évaluer les compétences techniques et fonctionnelles du Titulaire dans le cadre du test technique « Product Owner AI Agent » ;
+   - effectuer des tests techniques strictement liés à cette évaluation.
+
+3.2. Ce droit d’utilisation est **limité au cadre du processus de recrutement** et ne peut être utilisé à aucune autre fin.
+
+4. INTERDICTIONS ET LIMITATIONS DE RÉUTILISATION
+
+Sans accord écrit, préalable et explicite du Titulaire, la Société et toute autre partie ne sont **PAS** autorisées à :
+
+4.1. Copier, distribuer, publier ou mettre à disposition le Logiciel, en tout ou partie, auprès de tiers (y compris au sein d’un groupe de sociétés, filiales, partenaires ou sous-traitants), en dehors du strict besoin d’évaluation du test technique.
+
+4.2. Réutiliser, adapter, modifier ou intégrer le Logiciel (ou toute partie substantielle de celui-ci) :
+   - dans tout produit ou service commercial, présent ou futur, de la Société ;
+   - dans tout outil interne réutilisable par la Société ou ses équipes (Product, Data, Tech, etc.) au-delà du test technique ;
+   - dans toute autre plateforme, tout autre projet logiciel, interne ou externe, autre que l’évaluation du présent test.
+
+4.3. Se servir du Logiciel comme base ou inspiration directe pour concevoir ou améliorer une fonctionnalité de la plateforme SaaS de gestion de projet de la Société, ou de tout autre outil similaire, sans accord écrit du Titulaire.
+
+4.4. Revendiquer la paternité, la co‑paternité ou tout droit de propriété intellectuelle sur le Logiciel, supprimer les mentions de copyright et de licence, ou les remplacer par celles de la Société.
+
+4.5. Accorder des sous-licences, céder, transférer ou concéder à un tiers tout droit d’utilisation du Logiciel à quelque titre que ce soit.
+
+4.6. Exploiter le Logiciel pour entraîner, affiner ou améliorer un modèle d’intelligence artificielle, un système automatisé ou tout autre outil de machine learning, sans accord écrit du Titulaire.
+
+5. CONFIDENTIALITÉ ET NON-RÉUTILISATION DES IDÉES
+
+5.1. Le Logiciel et toutes les informations techniques associées (architecture, idées, organisation du code, prompts, logique métier liée au Product Owner, documentation, exemples, jeux de données de démonstration, etc.) sont réputés **confidentiels**.
+
+5.2. La Société s’engage à ne pas divulguer ces informations à des tiers, ni à les utiliser pour développer, directement ou indirectement, un logiciel, un module, un agent IA ou un produit concurrent ou similaire, en dehors de l’évaluation des compétences du Titulaire, sauf accord écrit et spécifique.
+
+5.3. Toute réutilisation des idées, choix d’architecture, prompts, logiques d’agent, concept d’« agent Product Owner », ou tout autre élément original élaboré par le Titulaire, à des fins autres que l’évaluation du test, nécessite un accord écrit, pouvant inclure une **cession de droits** ou un **contrat de prestation** distinct.
+
+6. CONTRIBUTIONS, MODIFICATIONS ET DÉRIVÉS
+
+6.1. Toute modification, correction ou amélioration apportée par la Société au Logiciel dans le cadre du test reste strictement limitée à un usage interne d’évaluation et ne confère aucun droit de propriété intellectuelle à la Société sur le Logiciel d’origine.
+
+6.2. Sauf accord écrit contraire, aucune création dérivée basée sur le Logiciel ne pourra être exploitée commercialement ou intégrée dans les produits / services / outils internes de la Société.
+
+7. RESPONSABILITÉ – ABSENCE DE GARANTIE
+
+7.1. Le Logiciel est fourni « EN L’ÉTAT », sans aucune garantie expresse ou implicite, y compris, sans s’y limiter, les garanties de qualité marchande, d’adéquation à un usage particulier, d’absence de contrefaçon ou de bon fonctionnement ininterrompu.
+
+7.2. En aucun cas le Titulaire ne pourra être tenu responsable de tout dommage direct ou indirect (y compris perte de données, perte de chiffre d’affaires, interruption d’activité, atteinte à l’image, ou autre) résultant de l’utilisation ou de l’impossibilité d’utiliser le Logiciel, même si le Titulaire a été informé de la possibilité de tels dommages.
+
+8. DURÉE ET RÉSILIATION
+
+8.1. La présente licence est accordée pour la durée nécessaire à l’évaluation du test technique par la Société, ou jusqu’à la fin du processus de recrutement auquel participe le Titulaire, selon la première de ces échéances.
+
+8.2. En cas de non-respect d’une quelconque clause de la présente licence, la licence prend immédiatement fin, de plein droit, sans préavis ni indemnité.
+
+8.3. À la résiliation, la Société doit cesser toute utilisation du Logiciel et détruire toutes les copies, complètes ou partielles, qu’elle pourrait détenir, sauf accord écrit contraire du Titulaire.
+
+9. DROIT APPLICABLE ET JURIDICTION COMPÉTENTE
+
+9.1. La présente licence est régie par le droit de la France.
+
+9.2. Tout litige relatif à l’interprétation, la validité ou l’exécution de la présente licence sera soumis à la compétence exclusive des tribunaux, nonobstant pluralité de défendeurs ou appel en garantie.
+
+10. DISPOSITIONS FINALES
+
+10.1. Si une clause de la présente licence était jugée nulle ou inapplicable, les autres clauses resteraient pleinement en vigueur.
+
+10.2. Le fait pour le Titulaire de ne pas se prévaloir d’un manquement à l’une quelconque des obligations prévues par la présente licence ne saurait être interprété comme une renonciation à l’obligation en cause.
+
+11. CONTACT POUR TOUTE UTILISATION ÉLARGIE
+
+Pour toute demande d’utilisation élargie (réutilisation par l’entreprise, intégration dans un produit SaaS ou un outil interne, exploitation commerciale, cession de droits, etc.), la Société doit contacter le Titulaire à l’adresse suivante : mouhamed.syai@gmail.com
