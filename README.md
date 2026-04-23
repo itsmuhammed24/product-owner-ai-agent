@@ -41,19 +41,19 @@
 **Première fois** → [Quickstart complet](docs/quickstart.md) (prérequis, config `.env`, lancement)
 
 ```bash
-cp .env.example .env   # ajouter GROQ_API_KEY (gratuit : console.groq.com)
+cp .env.example .env   # ajouter CLAUDE_API_KEY (ou ANTHROPIC_API_KEY)
 make start
 ```
 
 → http://localhost:5173 (UI) • http://localhost:8000 (API)
 
-**Docker** : `cp .env.example .env` → éditer `.env` (GROQ_API_KEY) → `docker-compose up` — UI sur http://localhost:80
+**Docker** : `cp .env.example .env` → éditer `.env` (CLAUDE_API_KEY ou ANTHROPIC_API_KEY) → `docker-compose up` — UI sur http://localhost:80
 
 ### Variables d'environnement principales
 
 | Variable | Rôle | Requis |
 |----------|------|--------|
-| `GROQ_API_KEY` | Clé API Groq (LLM) | Oui |
+| `CLAUDE_API_KEY` / `ANTHROPIC_API_KEY` | Clé API Claude (Anthropic) | Oui |
 | `OPENAI_API_KEY` | Clustering sémantique InsightAgent | Non |
 | `USE_CHROMA` | Persistance RAG cross-sessions | Non (défaut: true) |
 | `MAX_FEEDBACKS` | Limite feedbacks par analyse (défaut: 100) | Non |
@@ -64,7 +64,7 @@ Voir [.env.example](.env.example) pour la liste complète.
 
 ## Démo
 
-**Démo one-click** : `make start` → page Feedback → bouton « Démo one-click » (GROQ_API_KEY requis)
+**Démo one-click** : `make start` → page Feedback → bouton « Démo one-click » (CLAUDE_API_KEY requis)
 
 **Manuel** : « Charger l'exemple » ou uploade un fichier JSONL/CSV
 
@@ -139,18 +139,9 @@ apps/
 |----------|----------|
 | **Erreur au lancement** | Vérifier Python 3.10+, Node 18+. |
 | **API injoignable** | Vérifier que l'API tourne (`make run` ou `uvicorn apps.api.main:app --port 8000`). En dev, Vite proxy `/api` → `localhost:8000`. |
-| **GROQ_API_KEY requis** | Créer une clé sur [console.groq.com](https://console.groq.com), l'ajouter dans `.env`, relancer. |
+| **CLAUDE_API_KEY requis** | Créer une clé sur [console.anthropic.com](https://console.anthropic.com), l'ajouter dans `.env`, relancer. |
 | **429 Too Many Requests** | Quota Groq ou rate limit dépassé. Attendre 1 min ou augmenter `RATE_LIMIT_PER_MIN`. |
 | **Erreur Canny** | Vérifier `CANNY_API_KEY` et `CANNY_BOARD_ID` dans `.env`. |
 | **Chroma / RAG échoue** | `pip install -e ".[chroma]"`. Vérifier `./data/chroma` accessible en écriture. |
 | **Docker : rate limit inefficace** | Configurer le proxy pour passer `X-Forwarded-For` (client réel). |
 
-## Licence
-
-Ce projet est soumis à une **licence propriétaire d’utilisation limitée**, rédigée spécifiquement pour le test technique « Technical Test for Agent Builder: Create a Product Owner Agent » transmis par la société THIGA.
-
-- Le code et la documentation restent la propriété exclusive de l’auteur.
-- La Société ne dispose que d’un droit d’utilisation **strictement limité à l’évaluation du test dans le cadre du recrutement**.
-- Toute réutilisation, adaptation, intégration dans un produit ou service (y compris outils internes ou offres commerciales), ainsi que toute utilisation de ce projet (code, données ou prompts) pour améliorer des modèles internes, est **interdite sans accord écrit préalable**.
-
-Les modalités complètes sont détaillées dans le fichier [`LICENSE`](LICENSE).
